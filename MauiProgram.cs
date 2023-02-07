@@ -4,8 +4,9 @@ using BluetoothLE.Droid;
 #elif IOS
 using MauiBLE.Platforms.iOS.bluetooth;
 #elif MACCATALYST
-using BluetoothLE.iOS
+using BluetoothLE.iOS;
 #endif
+#if !WINDOWS
 
 
 namespace MauiBLE;
@@ -30,3 +31,4 @@ public static class MauiProgram
         return builder.Build();
 	}
 }
+#endif

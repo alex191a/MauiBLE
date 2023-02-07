@@ -1,5 +1,5 @@
 ﻿
-
+#if IOS
 using System;
 using BluetoothLE.Core;
 using CoreBluetooth;
@@ -119,3 +119,4 @@ namespace MauiBLE.Platforms.iOS.bluetooth
         #endregion
     }
 }
+#endif

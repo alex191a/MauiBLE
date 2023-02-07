@@ -1,5 +1,5 @@
-﻿
-    using System;
+﻿#if IOS
+using System;
     using BluetoothLE.Core;
     using System.Collections.Generic;
     using CoreBluetooth;
@@ -161,3 +161,4 @@
             #endregion
         }
     }
+#endif
